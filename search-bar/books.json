@@ -1,0 +1,953 @@
+{
+    "books": [
+        {
+            "bookId": 0,
+            "bookname": "To Kill a Mockingbird",
+            "author": "Harper Lee",
+            "genre": [
+                "Fiction"
+            ],
+            "isAvailable": false
+        },
+        {
+            "bookId": 1,
+            "bookname": "1984",
+            "author": "George Orwell",
+            "genre": [
+                "Dystopian"
+            ],
+            "isAvailable": false
+        },
+        {
+            "bookId": 2,
+            "bookname": "Pride and Prejudice",
+            "author": "Jane Austen",
+            "genre": [
+                "Romance"
+            ],
+            "isAvailable": false
+        },
+        {
+            "bookId": 3,
+            "bookname": "The Great Gatsby",
+            "author": "F. Scott Fitzgerald",
+            "genre": [
+                "Classic"
+            ],
+            "isAvailable": true
+        },
+        {
+            "bookId": 4,
+            "bookname": "The Catcher in the Rye",
+            "author": "J.D. Salinger",
+            "genre": [
+                "Coming of_Age"
+            ],
+            "isAvailable": false
+        },
+        {
+            "bookId": 5,
+            "bookname": "Brave New World",
+            "author": "Aldous Huxley",
+            "genre": [
+                "Science Fiction"
+            ],
+            "isAvailable": true
+        },
+        {
+            "bookId": 6,
+            "bookname": "The Lord of the Rings",
+            "author": "J.R.R. Tolkien",
+            "genre": [
+                "Fantasy"
+            ],
+            "isAvailable": true
+        },
+        {
+            "bookId": 7,
+            "bookname": "Moby Dick",
+            "author": "Herman Melville",
+            "genre": [
+                "Adventure"
+            ],
+            "isAvailable": true
+        },
+        {
+            "bookId": 8,
+            "bookname": "War and Peace",
+            "author": "Leo Tolstoy",
+            "genre": [
+                "Historical",
+                "Fiction"
+            ],
+            "isAvailable": true
+        },
+        {
+            "bookId": 9,
+            "bookname": "The Hobbit",
+            "author": "J.R.R. Tolkien",
+            "genre": [
+                "Fantasy"
+            ],
+            "isAvailable": true
+        },
+        {
+            "bookId": 10,
+            "bookname": "The Chronicles of Narnia",
+            "author": "C.S. Lewis",
+            "genre": [
+                "Fantasy"
+            ],
+            "isAvailable": true
+        },
+        {
+            "bookId": 11,
+            "bookname": "The Hunger Games",
+            "author": "Suzanne Collins",
+            "genre": [
+                "Young Adult"
+            ],
+            "isAvailable": true
+        },
+        {
+            "bookId": 12,
+            "bookname": "The Shining",
+            "author": "Stephen King",
+            "genre": [
+                "Horror"
+            ],
+            "isAvailable": true
+        },
+        {
+            "bookId": 13,
+            "bookname": "Crime and Punishment",
+            "author": "Fyodor Dostoevsky",
+            "genre": [
+                "Psychological",
+                "Thriller"
+            ],
+            "isAvailable": true
+        },
+        {
+            "bookId": 14,
+            "bookname": "The Road",
+            "author": "Cormac McCarthy",
+            "genre": [
+                "Post",
+                "Apocalyptic"
+            ],
+            "isAvailable": true
+        },
+        {
+            "bookId": 15,
+            "bookname": "The Da Vinci Code",
+            "author": "Dan Brown",
+            "genre": [
+                "Thriller"
+            ],
+            "isAvailable": true
+        },
+        {
+            "bookId": 16,
+            "bookname": "The Old Man and the Sea",
+            "author": "Ernest Hemingway",
+            "genre": [
+                "Novella"
+            ],
+            "isAvailable": false
+        },
+        {
+            "bookId": 17,
+            "bookname": "One Hundred Years of Solitude",
+            "author": "Gabriel García Márquez",
+            "genre": [
+                "Magical",
+                "Realism"
+            ],
+            "isAvailable": true
+        },
+        {
+            "bookId": 18,
+            "bookname": "The Alchemist",
+            "author": "Paulo Coelho",
+            "genre": [
+                "Self Help"
+            ],
+            "isAvailable": false
+        },
+        {
+            "bookId": 19,
+            "bookname": "A Song of Ice and Fire",
+            "author": "George R.R. Martin",
+            "genre": [
+                "Fantasy"
+            ],
+            "isAvailable": false
+        },
+        {
+            "bookId": 20,
+            "bookname": "Lord of the Flies",
+            "author": "William Golding",
+            "genre": [
+                "Allegorical",
+                "Fiction"
+            ],
+            "isAvailable": true
+        },
+        {
+            "bookId": 21,
+            "bookname": "The Grapes of Wrath",
+            "author": "John Steinbeck",
+            "genre": [
+                "Historical",
+                "Fiction"
+            ],
+            "isAvailable": false
+        },
+        {
+            "bookId": 22,
+            "bookname": "Anna Karenina",
+            "author": "Leo Tolstoy",
+            "genre": [
+                "Realist",
+                "Fiction"
+            ],
+            "isAvailable": false
+        },
+        {
+            "bookId": 23,
+            "bookname": "The Odyssey",
+            "author": "Homer",
+            "genre": [
+                "Epic",
+                "Poetry"
+            ],
+            "isAvailable": false
+        },
+        {
+            "bookId": 24,
+            "bookname": "A Tale of Two Cities",
+            "author": "Charles Dickens",
+            "genre": [
+                "Historical",
+                "Fiction"
+            ],
+            "isAvailable": true
+        },
+        {
+            "bookId": 25,
+            "bookname": "Wuthering Heights",
+            "author": "Emily Brontë",
+            "genre": [
+                "Gothic",
+                "Romance"
+            ],
+            "isAvailable": false
+        },
+        {
+            "bookId": 26,
+            "bookname": "Frankenstein",
+            "author": "Mary Shelley",
+            "genre": [
+                "Science Fiction"
+            ],
+            "isAvailable": false
+        },
+        {
+            "bookId": 27,
+            "bookname": "The Count of Monte Cristo",
+            "author": "Alexandre Dumas",
+            "genre": [
+                "Adventure"
+            ],
+            "isAvailable": false
+        },
+        {
+            "bookId": 28,
+            "bookname": "Dracula",
+            "author": "Bram Stoker",
+            "genre": [
+                "Gothic",
+                "Horror"
+            ],
+            "isAvailable": true
+        },
+        {
+            "bookId": 29,
+            "bookname": "The Road Less Traveled",
+            "author": "M. Scott Peck",
+            "genre": [
+                "Self Help"
+            ],
+            "isAvailable": false
+        },
+        {
+            "bookId": 30,
+            "bookname": "The Picture of Dorian Gray",
+            "author": "Oscar Wilde",
+            "genre": [
+                "Gothic"
+            ],
+            "isAvailable": false
+        },
+        {
+            "bookId": 31,
+            "bookname": "Great Expectations",
+            "author": "Charles Dickens",
+            "genre": [
+                "Coming of_Age"
+            ],
+            "isAvailable": true
+        },
+        {
+            "bookId": 32,
+            "bookname": "The Little Prince",
+            "author": "Antoine de Saint Exupéry",
+            "genre": [
+                "Children's"
+            ],
+            "isAvailable": true
+        },
+        {
+            "bookId": 33,
+            "bookname": "Alice's Adventures in Wonderland",
+            "author": "Lewis Carroll",
+            "genre": [
+                "Fantasy"
+            ],
+            "isAvailable": false
+        },
+        {
+            "bookId": 34,
+            "bookname": "The Sun Also Rises",
+            "author": "Ernest Hemingway",
+            "genre": [
+                "Lost",
+                "Generation"
+            ],
+            "isAvailable": true
+        },
+        {
+            "bookId": 35,
+            "bookname": "The Art of War",
+            "author": "Sun Tzu",
+            "genre": [
+                "Philosophy"
+            ],
+            "isAvailable": false
+        },
+        {
+            "bookId": 36,
+            "bookname": "A Farewell to Arms",
+            "author": "Ernest Hemingway",
+            "genre": [
+                "War",
+                "Fiction"
+            ],
+            "isAvailable": true
+        },
+        {
+            "bookId": 37,
+            "bookname": "The Scarlet Letter",
+            "author": "Nathaniel Hawthorne",
+            "genre": [
+                "Historical",
+                "Fiction"
+            ],
+            "isAvailable": true
+        },
+        {
+            "bookId": 38,
+            "bookname": "Siddhartha",
+            "author": "Hermann Hesse",
+            "genre": [
+                "Spiritual"
+            ],
+            "isAvailable": true
+        },
+        {
+            "bookId": 39,
+            "bookname": "Don Quixote",
+            "author": "Miguel de Cervantes",
+            "genre": [
+                "Satire"
+            ],
+            "isAvailable": true
+        },
+        {
+            "bookId": 40,
+            "bookname": "The Road to Serfdom",
+            "author": "Friedrich Hayek",
+            "genre": [
+                "Political",
+                "Philosophy"
+            ],
+            "isAvailable": false
+        },
+        {
+            "bookId": 41,
+            "bookname": "The Silmarillion",
+            "author": "J.R.R. Tolkien",
+            "genre": [
+                "Fantasy"
+            ],
+            "isAvailable": true
+        },
+        {
+            "bookId": 42,
+            "bookname": "Les Misérables",
+            "author": "Victor Hugo",
+            "genre": [
+                "Historical",
+                "Fiction"
+            ],
+            "isAvailable": false
+        },
+        {
+            "bookId": 43,
+            "bookname": "The Hound of the Baskervilles",
+            "author": "Arthur Conan Doyle",
+            "genre": [
+                "Mystery"
+            ],
+            "isAvailable": true
+        },
+        {
+            "bookId": 44,
+            "bookname": "The War of the Worlds",
+            "author": "H.G. Wells",
+            "genre": [
+                "Science Fiction"
+            ],
+            "isAvailable": false
+        },
+        {
+            "bookId": 45,
+            "bookname": "The Jungle",
+            "author": "Upton Sinclair",
+            "genre": [
+                "Social",
+                "Novel"
+            ],
+            "isAvailable": true
+        },
+        {
+            "bookId": 46,
+            "bookname": "The Secret Garden",
+            "author": "Frances Hodgson Burnett",
+            "genre": [
+                "Children's"
+            ],
+            "isAvailable": true
+        },
+        {
+            "bookId": 47,
+            "bookname": "The Adventures of Sherlock Holmes",
+            "author": "Arthur Conan Doyle",
+            "genre": [
+                "Detective",
+                "Fiction"
+            ],
+            "isAvailable": false
+        },
+        {
+            "bookId": 48,
+            "bookname": "The Divine Comedy",
+            "author": "Dante Alighieri",
+            "genre": [
+                "Epic",
+                "Poetry"
+            ],
+            "isAvailable": true
+        },
+        {
+            "bookId": 49,
+            "bookname": "Oliver Twist",
+            "author": "Charles Dickens",
+            "genre": [
+                "Social",
+                "Novel"
+            ],
+            "isAvailable": true
+        },
+        {
+            "bookId": 50,
+            "bookname": "The Stand",
+            "author": "Stephen King",
+            "genre": [
+                "Post Apocalyptic",
+                "Horror"
+            ],
+            "isAvailable": false
+        },
+        {
+            "bookId": 51,
+            "bookname": "The Stranger",
+            "author": "Albert Camus",
+            "genre": [
+                "Existentialism"
+            ],
+            "isAvailable": false
+        },
+        {
+            "bookId": 52,
+            "bookname": "The Road to Character",
+            "author": "David Brooks",
+            "genre": [
+                "Self Help"
+            ],
+            "isAvailable": true
+        },
+        {
+            "bookId": 53,
+            "bookname": "The Prince",
+            "author": "Niccolò Machiavelli",
+            "genre": [
+                "Political",
+                "Philosophy"
+            ],
+            "isAvailable": true
+        },
+        {
+            "bookId": 54,
+            "bookname": "The Name of the Wind",
+            "author": "Patrick Rothfuss",
+            "genre": [
+                "Fantasy"
+            ],
+            "isAvailable": false
+        },
+        {
+            "bookId": 55,
+            "bookname": "The Wind in the Willows",
+            "author": "Kenneth Grahame",
+            "genre": [
+                "Children's"
+            ],
+            "isAvailable": true
+        },
+        {
+            "bookId": 56,
+            "bookname": "The Color Purple",
+            "author": "Alice Walker",
+            "genre": [
+                "Epistolary",
+                "Novel"
+            ],
+            "isAvailable": true
+        },
+        {
+            "bookId": 57,
+            "bookname": "The Fault in Our Stars",
+            "author": "John Green",
+            "genre": [
+                "Young Adult"
+            ],
+            "isAvailable": true
+        },
+        {
+            "bookId": 58,
+            "bookname": "The Glass Castle",
+            "author": "Jeanette Walls",
+            "genre": [
+                "Memoir"
+            ],
+            "isAvailable": false
+        },
+        {
+            "bookId": 59,
+            "bookname": "The Lovely Bones",
+            "author": "Alice Sebold",
+            "genre": [
+                "Contemporary",
+                "Fiction"
+            ],
+            "isAvailable": false
+        },
+        {
+            "bookId": 60,
+            "bookname": "The Gruffalo",
+            "author": "Julia Donaldson",
+            "genre": [
+                "Children's"
+            ],
+            "isAvailable": false
+        },
+        {
+            "bookId": 61,
+            "bookname": "The Giver",
+            "author": "Lois Lowry",
+            "genre": [
+                "Young Adult",
+                "Dystopian"
+            ],
+            "isAvailable": true
+        },
+        {
+            "bookId": 62,
+            "bookname": "The Help",
+            "author": "Kathryn Stockett",
+            "genre": [
+                "Historical",
+                "Fiction"
+            ],
+            "isAvailable": true
+        },
+        {
+            "bookId": 63,
+            "bookname": "The Great Alone",
+            "author": "Kristin Hannah",
+            "genre": [
+                "Contemporary",
+                "Fiction"
+            ],
+            "isAvailable": true
+        },
+        {
+            "bookId": 64,
+            "bookname": "The Hunger",
+            "author": "Alma Katsu",
+            "genre": [
+                "Historical",
+                "Fiction"
+            ],
+            "isAvailable": false
+        },
+        {
+            "bookId": 65,
+            "bookname": "The Immortalists",
+            "author": "Chloe Benjamin",
+            "genre": [
+                "Literary",
+                "Fiction"
+            ],
+            "isAvailable": false
+        },
+        {
+            "bookId": 66,
+            "bookname": "The Inheritance",
+            "author": "Nicholas Evans",
+            "genre": [
+                "Western"
+            ],
+            "isAvailable": false
+        },
+        {
+            "bookId": 67,
+            "bookname": "The Invisible Man",
+            "author": "H.G. Wells",
+            "genre": [
+                "Science",
+                "Fiction"
+            ],
+            "isAvailable": false
+        },
+        {
+            "bookId": 68,
+            "bookname": "The Joy Luck Club",
+            "author": "Amy Tan",
+            "genre": [
+                "Contemporary",
+                "Fiction"
+            ],
+            "isAvailable": false
+        },
+        {
+            "bookId": 69,
+            "bookname": "The Kite Runner",
+            "author": "Khaled Hosseini",
+            "genre": [
+                "Historical",
+                "Fiction"
+            ],
+            "isAvailable": false
+        },
+        {
+            "bookId": 70,
+            "bookname": "The Last Child",
+            "author": "John Hart",
+            "genre": [
+                "Mystery"
+            ],
+            "isAvailable": false
+        },
+        {
+            "bookId": 71,
+            "bookname": "The Light Between Oceans",
+            "author": "M.L. Stedman",
+            "genre": [
+                "Historical",
+                "Fiction"
+            ],
+            "isAvailable": false
+        },
+        {
+            "bookId": 72,
+            "bookname": "The Martian",
+            "author": "Andy Weir",
+            "genre": [
+                "Science Fiction"
+            ],
+            "isAvailable": false
+        },
+        {
+            "bookId": 73,
+            "bookname": "The Night Circus",
+            "author": "Erin Morgenstern",
+            "genre": [
+                "Fantasy"
+            ],
+            "isAvailable": true
+        },
+        {
+            "bookId": 74,
+            "bookname": "The Outsiders",
+            "author": "S.E. Hinton",
+            "genre": [
+                "Young Adult"
+            ],
+            "isAvailable": true
+        },
+        {
+            "bookId": 75,
+            "bookname": "The Passage",
+            "author": "Justin Cronin",
+            "genre": [
+                "Post Apocalyptic"
+            ],
+            "isAvailable": true
+        },
+        {
+            "bookId": 76,
+            "bookname": "The Perks of Being a Wallflower",
+            "author": "Stephen Chbosky",
+            "genre": [
+                "Young",
+                "Adult"
+            ],
+            "isAvailable": false
+        },
+        {
+            "bookId": 77,
+            "bookname": "The Power of One",
+            "author": "Bryce Courtenay",
+            "genre": [
+                "Bildungsroman"
+            ],
+            "isAvailable": true
+        },
+        {
+            "bookId": 78,
+            "bookname": "The Princess Bride",
+            "author": "William Goldman",
+            "genre": [
+                "Fantasy"
+            ],
+            "isAvailable": false
+        },
+        {
+            "bookId": 79,
+            "bookname": "The Reckoning",
+            "author": "John Grisham",
+            "genre": [
+                "Legal",
+                "Thriller"
+            ],
+            "isAvailable": false
+        },
+        {
+            "bookId": 80,
+            "bookname": "The Secret History",
+            "author": "Donna Tartt",
+            "genre": [
+                "Mystery"
+            ],
+            "isAvailable": true
+        },
+        {
+            "bookId": 81,
+            "bookname": "The Shadow of the Wind",
+            "author": "Carlos Ruiz Zafón",
+            "genre": [
+                "Historical",
+                "Fiction"
+            ],
+            "isAvailable": false
+        },
+        {
+            "bookId": 82,
+            "bookname": "The Shack",
+            "author": "William P. Young",
+            "genre": [
+                "Christian",
+                "Fiction"
+            ],
+            "isAvailable": true
+        },
+        {
+            "bookId": 83,
+            "bookname": "The Silence of the Girls",
+            "author": "Pat Barker",
+            "genre": [
+                "Historical",
+                "Fiction"
+            ],
+            "isAvailable": false
+        },
+        {
+            "bookId": 84,
+            "bookname": "The Silent Patient",
+            "author": "Alex Michaelides",
+            "genre": [
+                "Psychological",
+                "Thriller"
+            ],
+            "isAvailable": false
+        },
+        {
+            "bookId": 85,
+            "bookname": "The Sisterhood of the Traveling Pants",
+            "author": "Ann Brashares",
+            "genre": [
+                "Young Adult"
+            ],
+            "isAvailable": true
+        },
+        {
+            "bookId": 86,
+            "bookname": "The Snow Child",
+            "author": "Eowyn Ivey",
+            "genre": [
+                "Historical",
+                "Fiction"
+            ],
+            "isAvailable": false
+        },
+        {
+            "bookId": 87,
+            "bookname": "The Song of Achilles",
+            "author": "Madeline Miller",
+            "genre": [
+                "Historical",
+                "Fiction"
+            ],
+            "isAvailable": true
+        },
+        {
+            "bookId": 88,
+            "bookname": "The Storyteller",
+            "author": "Jodi Picoult",
+            "genre": [
+                "Contemporary",
+                "Fiction"
+            ],
+            "isAvailable": true
+        },
+        {
+            "bookId": 89,
+            "bookname": "The Subtle Art of Not Giving a F*ck",
+            "author": "Mark Manson",
+            "genre": [
+                "Self Help"
+            ],
+            "isAvailable": true
+        },
+        {
+            "bookId": 90,
+            "bookname": "The Tattooist of Auschwitz",
+            "author": "Heather Morris",
+            "genre": [
+                "Historical",
+                "Fiction"
+            ],
+            "isAvailable": false
+        },
+        {
+            "bookId": 91,
+            "bookname": "The Testaments",
+            "author": "Margaret Atwood",
+            "genre": [
+                "Dystopian"
+            ],
+            "isAvailable": false
+        },
+        {
+            "bookId": 92,
+            "bookname": "The Thorn Birds",
+            "author": "Colleen McCullough",
+            "genre": [
+                "Family",
+                "Saga"
+            ],
+            "isAvailable": true
+        },
+        {
+            "bookId": 93,
+            "bookname": "The Underground Railroad",
+            "author": "Colson Whitehead",
+            "genre": [
+                "Historical",
+                "Fiction"
+            ],
+            "isAvailable": false
+        },
+        {
+            "bookId": 94,
+            "bookname": "The Uninhabitable Earth",
+            "author": "David Wallace Wells",
+            "genre": [
+                "Non",
+                "Fiction"
+            ],
+            "isAvailable": true
+        },
+        {
+            "bookId": 95,
+            "bookname": "The Water Dancer",
+            "author": "Ta Nehisi Coates",
+            "genre": [
+                "Historical",
+                "Fiction"
+            ],
+            "isAvailable": false
+        },
+        {
+            "bookId": 96,
+            "bookname": "The Whisper Man",
+            "author": "Alex North",
+            "genre": [
+                "Thriller"
+            ],
+            "isAvailable": false
+        },
+        {
+            "bookId": 97,
+            "bookname": "The Wife Between Us",
+            "author": "Greer Hendricks and Sarah Pekkanen",
+            "genre": [
+                "Psychological",
+                "Thriller"
+            ],
+            "isAvailable": false
+        },
+        {
+            "bookId": 98,
+            "bookname": "The Woman in the Window",
+            "author": "A.J. Finn",
+            "genre": [
+                "Psychological",
+                "Thriller"
+            ],
+            "isAvailable": true
+        },
+        {
+            "bookId": 99,
+            "bookname": "The Yellow Wallpaper",
+            "author": "Charlotte Perkins Gilman",
+            "genre": [
+                "Short Story"
+            ],
+            "isAvailable": true
+        }
+    ]
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="books.css">
+        <title>Sample Search Bar</title>
+
+    </head>
+    <body>
+
+
+        <div class="form-container">
+            <form class="form">
+                <input id="search" type="text"  onkeyup="searchByName()" class="input" placeholder="search by Book  Name, Author and"/>
+                
+            </form>
+
+        </div>
+
+        <div class="results-container">
+            <ul class="results-list" id="list">
+
+            </ul>
+        </div>
+
+       
+
+        <h2>Books Name History</h2>
+        <table id = "tb1" border = "1">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Author</th>
+                <th>Genre</th>
+                <th>Available</th>
+
+            </tr>
+        </table>
+
+
+
+        <script>
+
+
+
+            fetch("books.json")
+
+                .then(response => response.json())
+                .then(data => {
+                    if (data.books && Array.isArray(data.books)) {
+                        // Sort the data by the "name" field in ascending order
+                        // data.books.sort((a, b) => a.name.localeCompare(b.name));
+                        
+                        for (var i = 0; i < data.books.length; i++) {
+                            let fetchId = data.books[i].bookId;
+                            let fetchName = data.books[i].bookname;
+                            let fetchAuthor = data.books[i].author;
+                            let fetchGenre = data.books[i].genre;
+                            let fetchAvailable = data.books[i].isAvailable;
+                            document.querySelector("#tb1").innerHTML += `
+                                <tr>
+                                    <td class="booksName">${fetchId }</td>
+                                    <td class="booksDepartment">${fetchName}</td>
+                                    <td class="booksStatus">${fetchAuthor}</td>
+                                    <td class="booksStatus">${ fetchGenre}</td>
+                                    <td class="booksStatus">${fetchAvailable }</td>
+                                    
+                                </tr>`;
+                        }
+                    } else {
+                        console.error("Data.books or data.books is missing or not an array.");
+                    }
+                })
+                .catch(error => {
+                    console.error("An error occurred while fetching or parsing data:", error);
+                });
+
+
+
+                function searchByName() {
+                let  input, filter, table, tr, td, i, txtValue;
+                input = document.getElementById("search");     
+                filter = input.value.toUpperCase();
+                table = document.getElementById("tb1");
+                tr = table.getElementsByTagName("tr");
+
+                for (i = 0; i < tr.length; i++) {
+                    tdName = tr[i].getElementsByTagName("td")[1];
+                    tdAuthor = tr[i].getElementsByTagName("td")[2];
+                    tdGenre = tr[i].getElementsByTagName("td")[3];
+                    
+                        if (tdName || tdAuthor || tdGenre) {
+                            txtName = tdName.textContent || tdName.innerText;
+                            txtAuthor = tdAuthor.textContent || tdAuthor.innerText;
+                            txtGenre = tdGenre.textContent || tdGenre.innerText;
+
+                            if (
+                                txtName.toUpperCase().indexOf(filter) > -1 ||
+                                txtAuthor.toUpperCase().indexOf(filter) > -1 ||
+                                txtGenre.toUpperCase().indexOf(filter) > -1
+                            ) {
+                                tr[i].style.display = "";
+                            } else {
+                                tr[i].style.display = "none";
+                            }
+                        }
+
+                }    
+                
+
+
+             }
+
+
+
+
+
+
+    
+        </script>
+    </body>
+</html>

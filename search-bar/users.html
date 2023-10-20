@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="users.css">
+        <title>Sample Search Bar</title>
+    </head>
+    <body>
+
+
+        <div class="form-container">
+            <form class="form">
+                <input id="search" type="text"  onkeyup="searchByName()" class="input" placeholder="search by name"/>
+                
+                
+            </form>
+
+        </div>
+
+        <div class="results-container">
+            <ul class="results-list" id="list">
+
+            </ul>
+        </div>
+
+       
+
+        <h2>Users Name History</h2>
+        <table id = "tb1" border = "1">
+            <tr>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Status</th>
+            </tr>
+        </table>
+
+
+
+        <script>
+            // Function to fetch and display data
+            function fetchDataAndDisplay() {
+                fetch("users.json")
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.users && Array.isArray(data.users)) {
+                            sortAndDisplayData(data.users);
+                        } else {
+                            console.error("Data.users or data.users is missing or not an array.");
+                        }
+                    })
+                    .catch(error => {
+                        console.error("An error occurred while fetching or parsing data:", error);
+                    });
+            }
+
+            // Function to sort and display data
+            function sortAndDisplayData(users) {
+                users.sort((a, b) => a.name.localeCompare(b.name));
+                
+                for (var i = 0; i < users.length; i++) {
+                    displayUser(users[i]);
+                }
+            }
+
+            // Function to display a single user in the table
+            function displayUser(user) {
+                let fetchName = user.name;
+                let fetchDepartment = user.department;
+                let fetchStatus = user.status;
+                
+                let table = document.querySelector("#tb1");
+                let newRow = document.createElement("tr");
+                
+                let nameCell = document.createElement("td");
+                nameCell.className = "usersName";
+                nameCell.textContent = fetchName;
+                
+                let departmentCell = document.createElement("td");
+                departmentCell.className = "usersDepartment";
+                departmentCell.textContent = fetchDepartment;
+                
+                let statusCell = document.createElement("td");
+                statusCell.className = "usersStatus";
+                statusCell.textContent = fetchStatus;
+                
+                newRow.appendChild(nameCell);
+                newRow.appendChild(departmentCell);
+                newRow.appendChild(statusCell);
+                
+                table.appendChild(newRow);
+            }
+
+            // Call the main function to fetch and display data
+            fetchDataAndDisplay();
+
+
+
+            // fetch("users.json")
+            //     .then(response => response.json())
+            //     .then(data => {
+            //         if (data.users && Array.isArray(data.users)) {
+            //             // Sort the data by the "name" field in ascending order
+            //             data.users.sort((a, b) => a.name.localeCompare(b.name));
+                        
+            //             for (var i = 0; i < data.users.length; i++) {
+            //                 let fetchName = data.users[i].name;
+            //                 let fetchDepartment = data.users[i].department;
+            //                 let fetchStatus = data.users[i].status;
+            //                 document.querySelector("#tb1").innerHTML += `
+            //                     <tr>
+            //                         <td class="usersName">${fetchName}</td>
+            //                         <td class="usersDepartment">${fetchDepartment}</td>
+            //                         <td class="usersStatus">${fetchStatus}</td>
+            //                     </tr>`;
+            //             }
+            //         } else {
+            //             console.error("Data.users or data.users is missing or not an array.");
+            //         }
+            //     })
+            //     .catch(error => {
+            //         console.error("An error occurred while fetching or parsing data:", error);
+            //     });
+
+
+
+
+
+
+
+
+
+        function searchByName() {
+                let  input, filter, table, tr, td, i, txtValue;
+                input = document.getElementById("search");     
+                filter = input.value.toUpperCase();
+                table = document.getElementById("tb1");
+                tr = table.getElementsByTagName("tr");
+                for (i = 0; i < tr.length; i++) {
+                    td = tr[i].getElementsByTagName("td")[0];
+                    if (td) {
+                    txtValue = td.textContent || td.innerText;
+                        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                            tr[i].style.display = "";
+                        } else {
+                            tr[i].style.display = "none";
+                        }
+
+                    }
+                }       
+        }
+
+
+
+    
+        </script>
+    </body>
+</html>

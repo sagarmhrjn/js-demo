@@ -1,0 +1,12 @@
+.form-container{
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.input{
+    height: 30px;
+    width:50%;
+    border-radius: 15px;
+    line-height: 2;
+    padding-left: 10px;
+}
