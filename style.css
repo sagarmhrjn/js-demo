@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+h1 {
+    font-size: 40px;
+    color: #835b86;
+    font-weight: 800;
+}
+
+#new-item {
+    width: 250px;
+    height: 25px;
+    padding: 8px;
+    border: 1px solid #835b86;
+    border-radius: 5px;
+}
+
+#item-list {
+    list-style-type: none;
+    padding: 0;
+    color: #835b86;
+}
+
+.item-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    margin: 5px 0;
+    padding: 10px;
+}
+
+#add-button {
+    width: 50px;
+    height: 42px;
+    background: #835b86;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    margin-left: 10px;
+
+}
+
+.item-container button {
+    background-color: #e8e4e9;
+    color: #835b86;
+    height: 30px;
+    width: 80px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
