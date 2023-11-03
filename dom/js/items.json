@@ -1,0 +1,10 @@
+{
+    "items":[
+    {"id":1,"itemName":"Mo:mo"},
+    {"id":2,"itemName":"Chicken Wings"},
+    {"id":3,"itemName":"Pepperoni Pizza"},
+    {"id":5,"itemName":"Samgyeopsal"},
+    {"id":4,"itemName":"Crossiant"},
+    {"id":6,"itemName":"Ramen Noodles"} 
+]
+}
