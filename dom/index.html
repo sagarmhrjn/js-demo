@@ -34,41 +34,29 @@
         <div class="container">
             <div id="main" class="card card-body">
                 <h2 class="title">Add menu</h2>
-                <form class="form-inline mb-3">
+                <form class="form-inline" id="menu-form">
                     <input type="text" class="form-control mr-2" />
-                    <!-- <select name="" id="" class="form-control">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                    </select> -->
-                    <input type="submit" class="btn btn-dark" value="Submit" />
+                    <input type="submit"  class="btn btn-dark" value="Submit" />                    
                 </form>
+                <p id="error-message" style="color:red;font-size:12px; visibility: hidden;">error</p>
+                
                 <h2 class="title">Menu list</h2>
-                <ul id="items" class="list-group">
-                    <li class="list-group-item">Mo:mo</li>
-                    <li class="list-group-item">Chicken Wings</li>
-                    <li class="list-group-item">Pepperoni Pizza</li>
-                    <li class="list-group-item">Crossiant</li>
-                    <li class="list-group-item">Samgyeopsal</li>
-                    <li class="list-group-item">Ramen Noodels</li>
+                <ul class="list-group" id="menu">
                 </ul>
                 <div id="output"></div>
-                <br />
                 <button class="btn btn-dark btn-block" id="button">
                     Click Here
                 </button>
             </div>
             <br />
-            <!-- <div
-                id="box"
-                style="width: 400px; height: 200px; background: #f4f4f4"
-            ></div> -->
         </div>
         <!-- /Main section -->
-
+        
         <footer>
             <span>© 2023 Devfinity, LLC. All Rights Reserved</span>
         </footer>
         <script src="./js/main.js"></script>
+        <script src="./js/crud.js" type="module"></script>
+
     </body>
 </html>
